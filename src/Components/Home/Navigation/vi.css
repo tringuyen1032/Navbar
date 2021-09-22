@@ -1,36 +1,52 @@
 .toggle-base {
-    height: 20px;
+  height: 1rem;
+}
+
+.navbar {
+  position: absolute;
+  right: 0;
+  width: 42rem;
+  display: flex;
+}
+
+.navbar_inner{
+   min-width: 37rem;
+   max-width: 37rem;
+}
+
+.searchInput_Style {
+  color: white !important;
+  width: 35rem;
+  height: 3.5rem;
+}
+
+.toggle-enter {
+  animation-name: fade-in;
+  animation-duration: 400ms;
+}
+.toggle-leave {
+  animation-name: fade-out;
+  animation-duration: 400ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    height: 0rem;
   }
-  
-  .toggle-enter {
-    animation-name: fade-in;
-    animation-duration: 400ms;
+  to {
+    opacity: 1;
+    height: 1rem;
   }
-  .toggle-leave {
-    animation-name: fade-out;
-    animation-duration: 400ms;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    height: 1rem;
   }
-  
-  @keyframes fade-in {
-    from {
-      opacity: 0.0;
-      height: 0px;
-    }
-    to {
-      opacity: 1.0;
-      height: 20px;
-    }
+  to {
+    opacity: 0;
+    height: 0rem;
   }
-  
-  
-  @keyframes fade-out {
-    from {
-      opacity: 1.0;
-      height: 20px;
-    }
-    to {
-      opacity: 0.0;
-      height: 0px;
-    }
-  }
-  
+}
