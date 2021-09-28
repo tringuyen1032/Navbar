@@ -1,0 +1,69 @@
+.toggle-base {
+  height: 1rem;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.avatar {
+  margin-left: 0.8rem;
+}
+
+.navbar_left {
+  width: 45%;
+}
+
+.navbar_right {
+  justify-content: end;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar_inside {
+  min-width: 25rem;
+  max-width: 25rem;
+}
+
+.searchInput_Style {
+  color: black !important;
+  width: 25rem;
+  height: 4rem;
+  margin-left: 1rem;
+  font-size: 15px;
+}
+
+.toggle-enter {
+  animation-name: fade-in;
+  animation-duration: 400ms;
+}
+.toggle-leave {
+  animation-name: fade-out;
+  animation-duration: 400ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    height: 0rem;
+  }
+  to {
+    opacity: 1;
+    height: 1rem;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    height: 1rem;
+  }
+  to {
+    opacity: 0;
+    height: 0rem;
+  }
+}

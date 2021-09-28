@@ -1,14 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import PrimarySearchAppBar from './Components/Home/Navigation';
-
+import HomePage from "./views/HomePage";
 
 function App() {
   
   return (
     <div className="App">
-
-      <PrimarySearchAppBar></PrimarySearchAppBar>
+      <HomePage></HomePage>
     </div>
 
   );
